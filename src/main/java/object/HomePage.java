@@ -9,25 +9,19 @@ import commonAction.CommonMethods;
 
 public class HomePage {
 	
-	
-	public HomePage(WebDriver driver) {
+	CommonMethods commonMethods;
+	public HomePage(WebDriver driver, CommonMethods commonMethods) {
 		PageFactory.initElements(driver, this);
+		this.commonMethods = commonMethods;
 	}
 	@FindBy(id = "txtZipCode")
 	WebElement zip;
-	
-	@FindBy(linkText = "//label[text()='First name']")
-	WebElement name;
 	
 	public void getQuote(CommonMethods common ) {
 		common.sendKeysEnter(zip, "11219");
 		//common.sendKeys(zip, "11219");
 		}
-	
 
 }
-
-
-
 
 //line 12,23 in nasir vais's homepage??'1:03

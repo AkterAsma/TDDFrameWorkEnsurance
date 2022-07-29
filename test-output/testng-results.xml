@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[11219 : value pass into --->[[ChromeDriver: chrome on WINDOWS (c5c0a1e47bf3536a2cf471a001a04d1c)] -> id: txtZipCode]]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-07-27T20:40:06 EDT" name="Default suite" finished-at="2022-07-27T20:40:15 EDT" duration-ms="8135">
+  <suite started-at="2022-07-29T16:10:22 EDT" name="Default suite" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2851">
     <groups>
     </groups>
-    <test started-at="2022-07-27T20:40:06 EDT" name="Default test" finished-at="2022-07-27T20:40:15 EDT" duration-ms="8135">
+    <test started-at="2022-07-29T16:10:22 EDT" name="Default test" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2851">
       <class name="test.TestClass">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-27T20:40:06 EDT" name="setUp" finished-at="2022-07-27T20:40:09 EDT" duration-ms="2899" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:22 EDT" name="setUP" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2696" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-27T20:40:09 EDT" name="test" finished-at="2022-07-27T20:40:14 EDT" duration-ms="5063" status="PASS">
+        </test-method> <!-- setUP -->
+        <test-method signature="test()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:24 EDT" name="test" finished-at="2022-07-29T16:10:24 EDT" duration-ms="4" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[11219 : value pass into --->[[ChromeDriver: chrome on WINDOWS (c5c0a1e47bf3536a2cf471a001a04d1c)] -> id: txtZipCode]]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-27T20:40:14 EDT" name="closingBrowser" finished-at="2022-07-27T20:40:15 EDT" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:24 EDT" name="terminate" finished-at="2022-07-29T16:10:24 EDT" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closingBrowser -->
+        </test-method> <!-- terminate -->
       </class> <!-- test.TestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -1,47 +1,57 @@
 package base;
 
-import java.security.PublicKey;
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import commonAction.CommonMethods;
-import configPackage.Config;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import object.AddVehicle;
-import object.HomePage;
-
+import utils.Configaration;
 
 public class BaseClass {
-	public static WebDriver driver;
-	public HomePage home;
-	public AddVehicle vehicle;
-	public CommonMethods common;
-	
+	public Configaration configaration = new Configaration(null);
+	WebDriver driver;
+
 	@BeforeMethod
-	public void setUp() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.get(Config.getObject().getUrl());
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(Config.getObject().getImplicitlywait())));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Integer.parseInt(Config.getObject().getPageLoadTimeOut())));
-		initiatingClases();
-	}
-	
-	public void initiatingClases() {
-		home = new HomePage(driver);
-		common = new CommonMethods();
-		vehicle=new AddVehicle();
-	}
-	@AfterMethod
-	public void closingBrowser() {
-		driver.quit();
-		
+	public void setUP() {
+		driver = localDriver("chrome");
+		driver.get(configaration.getConfigaration("url"));
+		driver.manage().timeouts().pageLoadTimeout(
+				Duration.ofSeconds(Integer.parseInt(configaration.getConfigaration("pageLoadTimeOut"))));
+		driver.manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(configaration.getConfigaration("implicitlywait"))));
+
 	}
 
+	private WebDriver localDriver(String browsername) {
+		if (browsername.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browsername.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		} else if (browsername.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else if (browsername.equalsIgnoreCase("safari")) {
+			WebDriverManager.safaridriver().setup();
+			driver = new SafariDriver();
+
+		}
+		return driver;
+
+	}
+
+	protected WebDriver getDriver() {
+		return driver;
+
+	}
+
+	@AfterMethod
+	public void terminate() {
+		driver.quit();
+	}
 }

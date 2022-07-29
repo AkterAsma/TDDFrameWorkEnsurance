@@ -8,7 +8,7 @@ import base.BaseClass;
 public class TestClass extends BaseClass{
 	@Test
 	public void test() {
-		home.getQuote(common);
+		
 		
 	}
 

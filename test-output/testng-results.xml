@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Homeowners : value visible in  --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //select[@id='ProductList']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> id: txtZipCode]<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnGoZip']]---> This element has been clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnStart']]---> This element has been clicked<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-07-29T16:10:22 EDT" name="Default suite" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2851">
+  <suite started-at="2022-08-02T01:00:22 EDT" name="Default suite" finished-at="2022-08-02T01:00:50 EDT" duration-ms="28255">
     <groups>
     </groups>
-    <test started-at="2022-07-29T16:10:22 EDT" name="Default test" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2851">
-      <class name="test.TestClass">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:22 EDT" name="setUP" finished-at="2022-07-29T16:10:24 EDT" duration-ms="2696" status="PASS">
+    <test started-at="2022-08-02T01:00:22 EDT" name="Default test" finished-at="2022-08-02T01:00:50 EDT" duration-ms="28255">
+      <class name="homeOwners.HomeTestClass">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:homeOwners.HomeTestClass@61001b64]" started-at="2022-08-02T01:00:22 EDT" name="setUP" finished-at="2022-08-02T01:00:25 EDT" duration-ms="2791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="test()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:24 EDT" name="test" finished-at="2022-07-29T16:10:24 EDT" duration-ms="4" status="PASS">
+        <test-method signature="homeTest()[pri:0, instance:homeOwners.HomeTestClass@61001b64]" started-at="2022-08-02T01:00:25 EDT" name="homeTest" finished-at="2022-08-02T01:00:50 EDT" duration-ms="25270" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Homeowners : value visible in  --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //select[@id='ProductList']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> id: txtZipCode]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnGoZip']]---> This element has been clicked<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnStart']]---> This element has been clicked<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:test.TestClass@61001b64]" started-at="2022-07-29T16:10:24 EDT" name="terminate" finished-at="2022-07-29T16:10:24 EDT" duration-ms="131" status="PASS">
+        </test-method> <!-- homeTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:homeOwners.HomeTestClass@61001b64]" started-at="2022-08-02T01:00:50 EDT" name="terminate" finished-at="2022-08-02T01:00:50 EDT" duration-ms="175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- test.TestClass -->
+      </class> <!-- homeOwners.HomeTestClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

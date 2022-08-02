@@ -6,7 +6,7 @@ import java.net.URL;
 import java.util.Properties;
 
 public class Config {
-private static String fileLocation = "./ConfigFile/config.properties";
+private static String fileLocation = "C:\\Users\\Anannya\\eclipse-workspace\\com.ensurance.qa\\ConfigFile";
 private static Config config;
 private static String url;
 private static String pageLoadTimeOut;

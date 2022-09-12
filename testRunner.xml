@@ -3,8 +3,8 @@
 <suite name="RegressionSuite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.TestClass"/>
-      <class name="test.TestClass"></class>
+      <!--class name="autoTest.AutoTestClass"/-->
+      <class name="homeOwners.HomeTestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- RegressionSuite -->

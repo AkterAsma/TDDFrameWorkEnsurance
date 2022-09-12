@@ -1,10 +1,8 @@
 package autoTest;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 import base.BaseClass;
-import object.HomePage1;
 
 public class AutoTestClass extends BaseClass{
 	@Test(enabled = true)

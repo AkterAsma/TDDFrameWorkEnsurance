@@ -12,6 +12,7 @@ import commonAction.Commons;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import object.AboutMe2;
 import object.HomePage1;
+import object.HomePlusAuto4;
 import object.HomeStartQuote3;
 import utils.Configaration;
 
@@ -23,6 +24,7 @@ public class BaseClass {
 	protected HomePage1 homePage;
 	protected AboutMe2 aboutMe;
 	protected HomeStartQuote3 homeStartQuote3;
+	protected HomePlusAuto4 homePlusAuto4;
 	
 	
 	@BeforeMethod
@@ -61,6 +63,7 @@ public class BaseClass {
 		homePage = new HomePage1(driver, commons);
 		aboutMe = new AboutMe2(driver, commons);
 		homeStartQuote3 = new HomeStartQuote3(driver, commons);
+		homePlusAuto4 = new HomePlusAuto4(driver, commons);
 		
 	}
 
@@ -71,6 +74,6 @@ public class BaseClass {
 
 	@AfterMethod
 	public void terminate() {
-		driver.quit();
+	//	driver.quit();
 	}
 }

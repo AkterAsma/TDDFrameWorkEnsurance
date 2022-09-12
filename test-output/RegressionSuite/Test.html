@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 31 19:44:11 EDT 2022</td>
+<td>Started on:</td><td>Tue Aug 16 22:59:16 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12862 ms)</td>
+<tr><td>Total time:</td><td>58 seconds (58707 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,25 +67,70 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.TestClass.test()'><b>test</b><br>Test class: test.TestClass<br/>
-<a href="#Output-653553574" onClick='toggleBox("Output-653553574", this, "Show output", "Hide output");'>Show output</a>
+<td title='homeOwners.HomeTestClass.homeTestPlus()'><b>homeTestPlus</b><br>Test class: homeOwners.HomeTestClass<br/>
+<a href="#Output-1623761043" onClick='toggleBox("Output-1623761043", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-653553574" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-653553574">
-11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (bfb2cff251030dbc3eaa326eb3716d89)] -> id: txtZipCode]<br><br/>
+<a href="#Output-1623761043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623761043">
+Homeowners : value visible in  --->[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> xpath: //select[@id='ProductList']]<br><br/>
+11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> id: txtZipCode]<br><br/>
+[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> xpath: //button[@id='btnGoZip']]---> This element has been clicked<br><br/>
+Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='fancy-checkbox__circle' and contains(.,'auto')]': This element Not Found<br><br/>
 </div>
 </td>
-<td></td>
-<td>0</td>
-<td>test.TestClass@71a8adcf</td></tr>
+<td><div><pre>java.lang.AssertionError: null
+	at commonAction.Commons.click(Commons.java:54)
+	at object.HomePlusAuto4.clickAuto(HomePlusAuto4.java:24)
+	at object.HomePlusAuto4.HomePlusAutoSteps(HomePlusAuto4.java:33)
+	at homeOwners.HomeTestClass.homeTestPlus(HomeTestClass.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1623761043", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1623761043'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at commonAction.Commons.click(Commons.java:54)
+	at object.HomePlusAuto4.clickAuto(HomePlusAuto4.java:24)
+	at object.HomePlusAuto4.HomePlusAutoSteps(HomePlusAuto4.java:33)
+	at homeOwners.HomeTestClass.homeTestPlus(HomeTestClass.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>homeOwners.HomeTestClass@27462a88</td></tr>
 </table><p>
 </body>
 </html>

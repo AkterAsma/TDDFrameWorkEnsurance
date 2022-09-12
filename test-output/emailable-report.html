@@ -8,11 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,255</td><td></td><td></td></tr>
+<tr><th colspan="8">RegressionSuite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">58,707</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">homeOwners.HomeTestClass</td><td><a href="#m0">homeTest</a></td><td rowspan="1">1659416425079</td><td rowspan="1">25270</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">homeOwners.HomeTestClass</td><td><a href="#m0">homeTestPlus</a></td><td rowspan="1">1660705160027</td><td rowspan="1">55354</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">homeOwners.HomeTestClass#homeTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Homeowners : value visible in  --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //select[@id='ProductList']]<br><br/>11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> id: txtZipCode]<br><br/>[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnGoZip']]---> This element has been clicked<br><br/>[[ChromeDriver: chrome on WINDOWS (e908fa1434fe894a86965966216d11de)] -> xpath: //button[@id='btnStart']]---> This element has been clicked<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">homeOwners.HomeTestClass#homeTestPlus</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Homeowners : value visible in  --->[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> xpath: //select[@id='ProductList']]<br><br/>11418 : value pass into --->[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> id: txtZipCode]<br><br/>[[ChromeDriver: chrome on WINDOWS (926f5be52156da9177a0c3268bbf5c8e)] -> xpath: //button[@id='btnGoZip']]---> This element has been clicked<br><br/>Proxy element for: DefaultElementLocator 'By.xpath: //span[@class='fancy-checkbox__circle' and contains(.,'auto')]': This element Not Found<br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at commonAction.Commons.click(Commons.java:54)
+	at object.HomePlusAuto4.clickAuto(HomePlusAuto4.java:24)
+	at object.HomePlusAuto4.HomePlusAutoSteps(HomePlusAuto4.java:33)
+	at homeOwners.HomeTestClass.homeTestPlus(HomeTestClass.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

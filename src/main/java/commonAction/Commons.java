@@ -43,7 +43,7 @@ public class Commons {
 
 	}
 
-	public void click (WebElement element) {
+	public void click(WebElement element) {
 		
 		try {
 			element.click();
@@ -54,5 +54,19 @@ public class Commons {
 			Assert.fail();
 		}
 	}
+
+public void sleep() {
+		try {
+			Thread.sleep(10000);
+			//Loggers.getLog(element +"---> This element has been clicked");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		//	Loggers.getLog(element + ": This element Not Found");
+			Assert.fail();
+		}
+	}
+	
+	
+	
 	
 }

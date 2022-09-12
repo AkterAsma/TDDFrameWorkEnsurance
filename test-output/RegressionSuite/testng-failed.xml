@@ -3,13 +3,13 @@
 <suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.TestClass">
+      <class name="homeOwners.HomeTestClass">
         <methods>
           <include name="setUP"/>
           <include name="terminate"/>
-          <include name="test"/>
+          <include name="homeTestPlus"/>
         </methods>
-      </class> <!-- test.TestClass -->
+      </class> <!-- homeOwners.HomeTestClass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

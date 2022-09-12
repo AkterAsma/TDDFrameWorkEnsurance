@@ -26,5 +26,6 @@ public class HomeStartQuote3 {
 	
 	public void HomeQuoteSteps() {
 		clickQuote();
+		commons.sleep();
 	}
 }

@@ -55,6 +55,8 @@ public class HomePage1 {
 		homeOwners(value1);
 		inputZipCode(value2);
 		clickHome();
+		commons.sleep();
+
 		
 		
 	}
